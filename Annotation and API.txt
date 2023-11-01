@@ -1,0 +1,50 @@
+Ques) Program to display current date and time in java.
+Ans)import java.util.*;
+ 
+public class GFG {
+    public static void main(String args[])
+    {
+        Date current_Date = new Date();
+        //"Date" class
+        //"current_Date" is Date object
+ 
+        System.out.println(current_Date);
+        // print the time and date
+    }
+}
+
+Ques) write a Program to convert a date to string in the format "MM/dd/yyyy".
+Ans)import java.text.DateFormat;
+    import java.text.SimpleDateFormat;
+    import java.util.Date;
+    import java.util.Calendar;
+ 
+public class DateToString {
+    public static void main(String args[])
+    {
+        // used to fetch current date and time
+        Date date = Calendar.getInstance().getTime();
+       
+        // specify the format yyyy-mm-dd to print current
+        // date to as an argument
+        DateFormat date_format = new SimpleDateFormat("yyyy-mm-dd");
+       
+        // print date in the specified format
+        String date_string = date_format.format(date);
+       
+        // printing date in string
+        System.out.println("Date to String : "+ date_string);
+                           
+    }
+}
+Ques) what is the differnce between collections and streams?Explain with an example.
+Ans)Collection is an in-memory data structure, which holds all the values that the data structure currently has. Every element in the Collection has to be computed before we add it to the Collection. Operations such as searching, sorting, insertion, manipulation, and deletion can be performed on a Collection. It provides many interfaces like (Set, List, Queue, Deque) and Classes like (ArrayList, Vector, LinkedList, PriorityQueue, HashSet).
+On the other hand, IStream is an API that is introduced in Java 8 which is used to process collections of objects. A stream is a sequence of objects that supports various methods which can be pipelined to produce the desired result. The Stream API is used to process collections of objects.
+
+
+Ques) what is enums in java? explain with an example.
+Ans)An enum type is a special data type that enables for a variable to be a set of predefined constants. The variable must be equal to one of the values that have been predefined for it. Common examples include compass directions (values of NORTH, SOUTH, EAST, and WEST) and the days of the week.
+
+Ques) what are built annotations in java?
+Ans)Annotations in Java provide additional information to the compiler and JVM. An annotation is a tag representing metadata about classes, interfaces, variables, methods, or fields. Annotations do not impact the execution of the code that they annotate.
+
